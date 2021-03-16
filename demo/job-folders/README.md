@@ -1,8 +1,8 @@
 Job Folders demo
 =================
 
-This demo shows, how to define the Job inside of a folder-structure, defined by parameter ```--job-name```
-To create folders, that load libraries JCasC can be used.
+This demo shows, how to define the Job inside of a folder-structure, defined by parameter ```--job-name```  
+To create folders with additional behavior (e.g. loading of shared libraries), Job DSLs as JCasC can be used.
 
 You can run this demos after building jenkinsfile-runner image as described in [Contributing to Jenkinsfile Runner](/CONTRIBUTING.adoc#building)
 
