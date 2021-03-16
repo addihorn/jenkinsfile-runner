@@ -15,7 +15,7 @@ jobs:
                     gitSCM {
                       userRemoteConfigs {
                         userRemoteConfig {
-                          url('https://github-com/jenkins-infra/pipeline-library.git')
+                          url('https://github.com/jenkins-infra/pipeline-library.git')
                           name('test-libraries')
                           refspec('')
                           credentialsId('')
@@ -38,8 +38,6 @@ jobs:
        }
       }
     }
-
-jobs:
  - script: >
     folder('folderWithoutLib') {
      displayName('Project B')
@@ -47,7 +45,5 @@ jobs:
 
 tool:
   git:
-    installations:
-    - name: "jgit"
-      
-    
+    installations:   
+    - name: "jgitapache"
