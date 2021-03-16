@@ -36,7 +36,7 @@ docker run --rm \
 	--job-name folder1/folder2/myJob
 ```	
 
-## Run names job without folders
+## Run named job without folders
 
 ```
 docker run --rm \
