@@ -2,3 +2,8 @@ stage('Read Job Names') {
 	println "JOB_NAME: " + env.JOB_NAME
 	println "JOB_BASE_NAME: " + env.JOB_BASE_NAME
 }
+
+stage('Run Library') {
+	println "This will propably fail"
+	buildPlugin()
+}

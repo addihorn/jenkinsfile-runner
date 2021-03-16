@@ -1,0 +1,53 @@
+jobs:
+ - script: >
+    folder('myFolder') {
+     displayName('Project A')
+      properties {
+       folderLibraries {
+         libraries {
+           libraryConfiguration {
+              name('Test-Folder-Libraries') 
+              defaultVersion('1.0')
+              implicit(true)
+              retriever {
+                legacySCM {
+                  scm {
+                    gitSCM {
+                      userRemoteConfigs {
+                        userRemoteConfig {
+                          url('https://github-com/jenkins-infra/pipeline-library.git')
+                          name('test-libraries')
+                          refspec('')
+                          credentialsId('')
+                        }
+                      }
+                      branches {
+                        branchSpec {
+                          name('*/master')
+                        }
+                      }
+                      doGenerateSubmoduleConfigurations(false)
+                      browser{}
+                      gitTool('')
+                    }
+                  }
+                }
+              }
+           }
+         }       
+       }
+      }
+    }
+
+jobs:
+ - script: >
+    folder('folderWithoutLib') {
+     displayName('Project B')
+    }
+
+tool:
+  git:
+    installations:
+    - name: "jgit"
+      
+    
