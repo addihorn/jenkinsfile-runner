@@ -47,7 +47,7 @@ docker run --rm \
 	--job-name myJob
 ```
 
-## Run without name (with Docker)
+## Run without defined name (with Docker)
 ```
 docker run --rm \
 	-v $(pwd)/demo/job-folders/Jenkinsfile:/workspace/Jenkinsfile \
